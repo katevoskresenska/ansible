@@ -4,12 +4,6 @@
   gather_facts: False
 
   tasks:
-    
-    - name: Creates directory if doesn't exist
-      file:
-        path: /var/lib/jenkins/workspace/SomeProject/ansible_one
-        state: directory
-        mode: 0755
 
     - name: Provision docker/wp instance
       ec2:
